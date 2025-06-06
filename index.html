@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <title>Elie's Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="index.js" defer></script>
+    </head>
+    <body >
+       <nav>
+            <div class="menu">
+                 <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                 </ul>
+            </div>
+            <div class="themeToggler">
+                <button id="changeTheme" data-theme-toggle onClick="toggleTheme()" >Change Theme</button>
+            </div>
+       </nav>
+       <section class="home" id="home">
+            <h1> Elie Paul </h1>
+       </section>
+        <section class="about" id="about">
+            <h1> About </h1>
+       </section>
+       <section class="contact" id="contact">
+            <header class="contact-header">
+                <h1> Contact Us</h1>
+            </header>
+            <section class="contact-content">
+                <article>
+                    <p>Description</p>
+                </article>
+                <aside>
+                    <form id="contact-form">
+                       <section class="contact-input">
+                        <label for="firstName">First Name</label>
+                        <input type="text"  id="firstName" name="firstName" required>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <input type="submit" value="Submit">
+                       </section>
+                    </form>
+                </aside>
+            </section>
+       </section>
+    </body>
+</html>
