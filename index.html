@@ -12,18 +12,30 @@
         <script src="index.js" defer></script>
         <script src="https://kit.fontawesome.com/d130b01c6c.js" crossorigin="anonymous"></script>
     </head>
-    <body >
+    <body>
        <nav>
             <div class="menu">
-                 <ul class="menu-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                 </ul>
+                <section class="desktop-menu">
+                     <ul class="menu-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </section>
+                
             </div>
             <div class="themeToggler">
-                <button id="changeTheme" data-theme-toggle onClick="toggleTheme()" ><i class="fa-solid fa-sun"></i></button>
+                <button id="changeTheme" class="btn" data-theme-toggle onClick="toggleTheme()" ><i class="fa-solid fa-sun"></i></button>
+                <button id="hamburger-menu" class="mobile-menu btn"><i class="fa-solid fa-bars"></i></button>
+                <section id="mobile-menu" class="mobile-menu hidden">
+                     <ul class="menu-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </section>
             </div>
        </nav>
        <section class="home" id="home">
@@ -31,7 +43,7 @@
                 <h1> Elie Paul </h1>
                 <h2>Get a website that bring more customer to your business!</h2>
                 <p> Your website should work as hard as you do. I help businesses build fast, modern, and user-friendly websites that turn visitors into customers. With 5+ years of experience in React, JavaScript, and web development best practices, I turn complex ideas into simple and effective digital solutions. Whether you need a new site, a redesign, or a custom feature to support your growth, I’m here to help. </p>
-                <button> <i class="fa-solid fa-arrow-right"></i> Work with me</button>
+                <button class="btn"> <i class="fa-solid fa-arrow-right"></i> Work with me</button>
             </article>
             <aside class="home-image">
                 <img class="profile-picture" src="images/Marco.jpg" alt="Elie Paul's profile image">
@@ -39,22 +51,77 @@
        </section>
         <section class="about" id="about">
             <h1> About </h1>
-            <p>I'm Elie Paul, a Front End Engineer.</p>
+            <p>Learn with Elie, who got into a 6-figure tech job right after college in a Fortune 500 company.
+
+I started my journey learning about computer science at City College and CUNY Tech Prep, where I developed a passion for both Web Development and helping others break into tech and succeed in their career.
+
+I went from being an immigrant to graduating college and secured my first job as a software engineer at IBM, developing AI-driven web applications. Getting the job before I even graduated. So, I went through the journey of learning and adapting to new environments: a new country, college, and corporation.
+
+I've compiled the practical web development knowledge and career insights that will help you build a lasting software engineering career. These fundamentals are designed to be beginner-friendly, making it easy for you to learn and apply. I have helped hundreds before gaining web development skills and breaking into tech.
+
+I enjoy giving back and contributing to others' success. I would love to contribute to your success and show you what is possible. Let’s do this. The transformation of your career literally starts with a single decision.</p>
+            <p>Worked at IBM</p>
        </section>
        <section class="portfolio" id="portfolio">
-            <h1> Portfolio </h1>
+            <header>
+                <h1> Portfolio </h1>
+            </header>
+            <section class="portfolio-gallery">
+                <article class="portfolio-item">
+                    <img src="images/goran-ivos-T8LMIN09-mo-unsplash.jpg" target="_blank" alt="A laptop on a table showing code in the terminal and a plant beside">
+                    <h3>Web Development project 1</h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque obcaecati accusamus incidunt ad, tempore architecto alias temporibus maiores praesentium.</p>
+                    <a href="https://github.com/EliePaulDev/portfolio-page" target="_blank" class="btn">Learn more</a>
+                </article>
+                <article class="portfolio-item">
+                    <img src="images/goran-ivos-T8LMIN09-mo-unsplash.jpg" target="_blank" alt="A laptop on a table showing code in the terminal and a plant beside">
+                    <h3>Web Development project 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque obcaecati accusamus incidunt ad, tempore architecto alias temporibus maiores praesentium.</p>
+                    <a href="https://github.com/EliePaulDev/portfolio-page" target="_blank" class="btn">Learn more</a>
+                </article>
+                <article class="portfolio-item">
+                    <img src="images/goran-ivos-T8LMIN09-mo-unsplash.jpg" target="_blank" alt="A laptop on a table showing code in the terminal and a plant beside">
+                    <h3>Web Development project 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque obcaecati accusamus incidunt ad, tempore architecto alias temporibus maiores praesentium.</p>
+                    <a href="https://github.com/EliePaulDev/portfolio-page" target="_blank" class="btn">Learn more</a>
+                </article>
+                <article class="portfolio-item">
+                    <img src="images/goran-ivos-T8LMIN09-mo-unsplash.jpg" target="_blank" alt="A laptop on a table showing code in the terminal and a plant beside">
+                    <h3>Web Development project 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque obcaecati accusamus incidunt ad, tempore architecto alias temporibus maiores praesentium.</p>
+                    <a href="https://github.com/EliePaulDev/portfolio-page" target="_blank" class="btn">Learn more</a>
+                </article>
+                <article class="portfolio-item">
+                    <img src="images/goran-ivos-T8LMIN09-mo-unsplash.jpg" target="_blank" alt="A laptop on a table showing code in the terminal and a plant beside">
+                    <h3>Web Development project 5</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque obcaecati accusamus incidunt ad, tempore architecto alias temporibus maiores praesentium.</p>
+                    <a href="https://github.com/EliePaulDev/portfolio-page" target="_blank" class="btn">Learn more</a>
+                </article>
+                <article class="portfolio-item">
+                    <img src="images/goran-ivos-T8LMIN09-mo-unsplash.jpg" target="_blank" alt="A laptop on a table showing code in the terminal and a plant beside">
+                    <h3>Web Development project 6</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque obcaecati accusamus incidunt ad, tempore architecto alias temporibus maiores praesentium.</p>
+                    <a href="https://github.com/EliePaulDev/portfolio-page" target="_blank" class="btn">Learn more</a>
+                </article>
+                <article class="portfolio-item">
+                    <img src="images/goran-ivos-T8LMIN09-mo-unsplash.jpg" target="_blank" alt="A laptop on a table showing code in the terminal and a plant beside">
+                    <h3>Web Development project 7</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque obcaecati accusamus incidunt ad, tempore architecto alias temporibus maiores praesentium.</p>
+                    <a href="https://github.com/EliePaulDev/portfolio-page" target="_blank" class="btn">Learn more</a>
+                </article>
+            </section>
 
-            <button><a href="./portfolio.html">See more</a></button>
+            <a href="./portfolio.html" class="btn">See more</a>
        </section>
        <section class="contact" id="contact">
             <header class="contact-header">
                 <h1> Contact Us</h1>
             </header>
             <section class="contact-content">
-                <article>
-                    <p>Description</p>
+                <article class="contact-description">
+                    <p> Your website should work as hard as you do. I help businesses build fast, modern, and user-friendly websites that turn visitors into customers. With 5+ years of experience in React, JavaScript, and web development best practices, I turn complex ideas into simple and effective digital solutions. Whether you need a new site, a redesign, or a custom feature to support your growth, I’m here to help. </p>
                 </article>
-                <aside>
+                <aside class="contact-form">
                     <form id="contact-form">
                        <section class="contact-input">
                         <label for="firstName">First Name</label>
@@ -65,7 +132,7 @@
                         <input type="email" id="email" name="email" required>
                         <label for="message">Message</label>
                         <textarea name="message" id="message"></textarea>
-                        <input type="submit" value="Submit">
+                        <input type="submit" class="btn" value="Submit">
                        </section>
                     </form>
                 </aside>

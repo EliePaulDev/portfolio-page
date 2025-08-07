@@ -5,6 +5,9 @@ function toggleTheme() {
     element.setAttribute("data-theme", newTheme);
 }
 
+//ternary operator
+//similar if else
+
 const contactForm = document.getElementById("contact-form");
 
 
@@ -17,4 +20,12 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
 
     alert(`Thank you, ${data.firstName}! We received your contact information.`);
+})
+
+const hamburgerMenu = document.getElementById("hamburger-menu");
+
+hamburgerMenu.addEventListener('click', () => {
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenu.classList.toggle("hidden");
 })
