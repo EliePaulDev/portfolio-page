@@ -11,15 +11,37 @@ function toggleTheme() {
 const contactForm = document.getElementById("contact-form");
 
 
+// key, value
+//{ test: "test string", }
+
+
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(contactForm);
     const data = Object.fromEntries(formData.entries());
 
     console.log(data);
-    contactForm.reset();
+    fetch("https://formspree.io/f/mldloljz", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          'Accept': 'application/json'
+        }
+    }).then(response => {
+        if(response.ok) {
+            alert(`Thank you, ${data.firstName}! We received your contact information.`);
+            contactForm.reset();
+        }
+        else {
+            alert("We could not send your information. Try Again!");
+        }
 
-    alert(`Thank you, ${data.firstName}! We received your contact information.`);
+    }).catch(error => console.log(`Error: ${error}`));
+
+
+    
+
+    
 })
 
 const hamburgerMenu = document.getElementById("hamburger-menu");

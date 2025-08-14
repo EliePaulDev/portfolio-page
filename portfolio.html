@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="The gallery for the portfolio of Elie Paul">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d130b01c6c.js" crossorigin="anonymous"></script>
+    <title>Elie Paul - Portfolio</title>
 </head>
 <body>
+    <nav>
+            <div class="menu">
+                <section class="desktop-menu">
+                     <ul class="menu-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </section>
+                
+            </div>
+            <div class="themeToggler">
+                <button id="changeTheme" class="btn" data-theme-toggle onClick="toggleTheme()" ><i class="fa-solid fa-sun"></i></button>
+                <button id="hamburger-menu" class="mobile-menu btn"><i class="fa-solid fa-bars"></i></button>
+                <section id="mobile-menu" class="mobile-menu hidden">
+                     <ul class="menu-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </section>
+            </div>
+       </nav>
     <h1> Portfolio </h1>
 
-    <a href="index.html"><button>Back</button></a>
+    <a href="index.html" class="btn"><button>Back</button></a>
 </body>
 </html>
