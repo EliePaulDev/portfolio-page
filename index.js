@@ -1,3 +1,8 @@
+let slideIndex = 1;
+showSlides(slideIndex);
+
+
+
 function toggleTheme() {
     let element = document.querySelector("html");
     let theme = element.getAttribute("data-theme");
@@ -51,3 +56,20 @@ hamburgerMenu.addEventListener('click', () => {
 
     mobileMenu.classList.toggle("hidden");
 })
+
+
+// += , number += 1, number = number + 1;
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("portfolio-slide");
+    if(n > slides.length) slideIndex = 1;
+    if(n < 1) slideIndex = slides.length;
+    for(let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
